@@ -1,0 +1,35 @@
+nav {
+  background: #1e293b; /* dark slate */
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #38bdf8; /* sky blue hover */
+}
+
+nav button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+nav button:hover {
+  background: #dc2626;
+}

@@ -1,0 +1,85 @@
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.home-banner {
+  background: linear-gradient(135deg, #3b82f6, #facc15); /* contrasting gradient */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+}
+
+.home-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-banner p {
+  font-size: 1.2rem;
+}
+
+.home-dashboard {
+  text-align: center;
+}
+
+.greeting {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 25px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.logout-btn {
+  padding: 10px 25px;
+  background-color: #1e293b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #6a11cb;
+}
+
+.login-prompt {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.login-prompt a {
+  color: #2575fc;
+  text-decoration: underline;
+}

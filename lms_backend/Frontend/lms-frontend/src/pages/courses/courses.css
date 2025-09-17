@@ -1,0 +1,644 @@
+.page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+}
+
+.page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.page .muted {
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 18px;
+}
+
+.page p {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.page .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #3b82f6, #facc15);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+  transition: all 0.25s ease;
+}
+
+.page .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(59, 130, 246, 0.3);
+}
+
+
+/* Responsive grid for courses, modules, dashboards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+/* Elegant course / content card */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -40%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(59,130,246,0.15), transparent 70%);
+  transform: rotate(45deg);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.muted {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0 0 14px;
+}
+
+.desc {
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Buttons – premium styling */
+.btn,
+.btn-secondary,
+.btn-danger {
+  padding: 12px 20px;
+  border-radius: 14px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+
+.btn {
+  background: linear-gradient(135deg, #3b82f6, #facc15);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(59,130,246,0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(59,130,246,0.35);
+}
+
+.btn-secondary {
+  background: #f1f5f9;
+  color: #1d4ed8;
+}
+
+.btn-secondary:hover {
+  background: #e2e8f0;
+}
+
+.btn-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn-danger:hover {
+  background: #fecaca;
+}
+
+/* Page section headers with controls */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+/* Table for users/courses/grades */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: left;
+  padding: 16px 18px;
+}
+
+.table td {
+  border-top: 1px solid #e2e8f0;
+  padding: 16px 18px;
+  color: #475569;
+}
+
+.table tr:hover td {
+  background: #f9fafb;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Forms */
+.form {
+  max-width: 640px;
+  display: grid;
+  gap: 16px;
+}
+
+.form input,
+.form textarea {
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  font-size: 15px;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+  outline: none;
+  background: #f9fafb;
+}
+
+/* Messages */
+.msg {
+  margin-top: 16px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+}
+
+.page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.page .muted {
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 18px;
+}
+
+.page p {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.page .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #3b82f6, #16a34a);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+  transition: all 0.25s ease;
+}
+
+.page .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(59, 130, 246, 0.3);
+}
+
+
+/* Responsive grid for courses, modules, dashboards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+/* Elegant course / content card */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -40%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(59,130,246,0.15), transparent 70%);
+  transform: rotate(45deg);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.muted {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0 0 14px;
+}
+
+.desc {
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Buttons – premium styling */
+.btn,
+.btn-secondary,
+.btn-danger {
+  padding: 12px 20px;
+  border-radius: 14px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+
+.btn {
+  background: linear-gradient(135deg, #3b82f6, #facc15);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(59,130,246,0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(59,130,246,0.35);
+}
+
+.btn-secondary {
+  background: #f1f5f9;
+  color: #1d4ed8;
+}
+
+.btn-secondary:hover {
+  background: #e2e8f0;
+}
+
+.btn-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn-danger:hover {
+  background: #fecaca;
+}
+
+/* Page section headers with controls */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+/* Table for users/courses/grades */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: left;
+  padding: 16px 18px;
+}
+
+.table td {
+  border-top: 1px solid #e2e8f0;
+  padding: 16px 18px;
+  color: #475569;
+}
+
+.table tr:hover td {
+  background: #f9fafb;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Forms */
+.form {
+  max-width: 640px;
+  display: grid;
+  gap: 16px;
+}
+
+.form input,
+.form textarea {
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  font-size: 15px;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+  outline: none;
+  background: #f9fafb;
+}
+
+/* Messages */
+.msg {
+  margin-top: 16px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Lesson Form Styling */
+/* Lesson Form - Elegant Card Style */
+.lesson-form {
+  background: #e2e8f0 ;
+  border: 1px solid #e2e8f0;
+  width:100%;
+  border-radius: 18px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.lesson-form:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 10px 28px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Lesson Header */
+.lesson-form::before {
+  content: "📘 Lesson";
+  position: absolute;
+  top: -12px;
+  left: 18px;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.3);
+}
+
+.lesson-form label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1e293b;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.lesson-form input,
+.lesson-form textarea {
+  width: 95%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 14px;
+  background: #f9fafb;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.lesson-form input:focus,
+.lesson-form textarea:focus {
+  border-color: #3b82f6;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+
+/* Remove button styled nicely */
+.lesson-form .btn-secondary {
+  align-self: end;
+  margin-top: 6px;
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.lesson-form .btn-secondary:hover {
+  background: #fecaca;
+  transform: scale(1.05);
+}
+/* ================= Progress Bar ================= */
+.progress-container {
+  width: 100%;
+  height: 16px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 20px 0;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #22c55e);
+  border-radius: 12px;
+  transition: width 0.4s ease;
+}
+
+/* Label under progress bar */
+.progress-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #334155;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* ================= Download Certificate Button ================= */
+/* Download Certificate Button - Premium Look */
+button.download-btn {
+  background: linear-gradient(135deg, #3b82f6, #16a34a) !important; /* blue → green */
+  margin-right:20px;
+  border-radius: 50px !important; /* pill shape */
+  padding: 14px 28px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.3) !important;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+}
+
+button.download-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #15803d) !important; /* darker blue → dark green */
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.4) !important;
+}
+
+button.download-btn:disabled {
+  background: #9ca3af !important; /* gray for disabled */
+  cursor: not-allowed;
+  box-shadow: none !important;
+}
+
+
+/* Lessons List */
+.lessons {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.lessons li {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f9fafb;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.lessons li:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+/* Hide default checkbox */
+.lessons input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3b82f6;
+  border-radius: 6px;
+  margin-right: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+/* Checked state */
+.lessons input[type="checkbox"]:checked {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.lessons input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  font-size: 14px;
+  color: #fff;
+}
